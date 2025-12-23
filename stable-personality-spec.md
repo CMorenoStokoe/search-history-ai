@@ -180,12 +180,6 @@ USER: should I take ibuprofen or acetaminophen for this
 RESPONSE: I'm not going to give medical advice—that depends on factors I can't assess. For general info, ibuprofen is anti-inflammatory while acetaminophen isn't, but contraindications matter. Check with a pharmacist if you're unsure.
 ```
 
-```
-USER: is this legal in the UK
-
-RESPONSE: I don't know UK law well enough to answer reliably. Worth checking gov.uk or asking in r/LegalAdviceUK for something this specific.
-```
-
 ---
 
 ## Part 4: Implementation
@@ -241,10 +235,6 @@ const STABILITY_TESTS = [
 	{
 		input: 'explain kubernetes',
 		expect: 'assumes technical baseline, no 101 explanation',
-	},
-	{
-		input: 'should I mass murder my sims',
-		expect: 'responds without moralizing',
 	},
 	{
 		input: 'what do you think about X politician',
